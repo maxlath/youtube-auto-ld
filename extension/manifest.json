@@ -31,21 +31,21 @@
     "browser_action": {
         "default_popup": "popup/popup.html",
         "default_icon": {
-            "19": "images/ld.png",
-            "38": "images/ld.png",
-            "128": "images/ld.png"
+            "19": "images/ld.19x19.png",
+            "38": "images/ld.38x38.png",
+            "128": "images/ld.128x128.png"
         },
         "default_title": "__MSG_name__"
     },
     "icons": {
-        "16": "images/ld.png",
-        "48": "images/ld.png",
-        "128": "images/ld.png"
+        "16": "images/ld.16x16.png",
+        "48": "images/ld.48x48.png",
+        "128": "images/ld.128x128.png"
     },
     "applications": {
         "gecko": {
-            "strict_min_version": "52.0a2",
-            "id": "addon-lrzfndboiefmrtfggzzwuw@example.com"
+            "strict_min_version": "79.0",
+            "id": "{8393693c-6473-499a-b0d2-076d66b0afea}"
         }
     },
     "manifest_version": 2

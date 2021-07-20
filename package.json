@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "auto-reload-extension": "web-ext run",
+    "lint": "web-ext lint",
+    "publish": "web-ext sign -s extension -a web-ext-artifacts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
