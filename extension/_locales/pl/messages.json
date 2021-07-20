@@ -1,6 +1,6 @@
 {
 	"name": {
-		"message": "Auto HD / 4k / 8k na YouTube™"
+		"message": "Auto LD na YouTube™"
 	},
 
 	"short_name": {
@@ -8,7 +8,7 @@
 	},
 
 	"description": {
-		"message": "Ustaw domyślną jakość odtwarzania wideo w serwisie YouTube™, który obsługuje rozdzielczość HD"
+		"message": "Ustaw domyślną jakość odtwarzania wideo w serwisie YouTube™"
 	},
 
 	"popupHeader": {

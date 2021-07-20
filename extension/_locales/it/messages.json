@@ -1,6 +1,6 @@
 {
 	"name": {
-		"message": "Auto HD / 4k / 8k per YouTube™"
+		"message": "Auto LD per YouTube™"
 	},
 
 	"short_name": {
@@ -8,7 +8,7 @@
 	},
 
 	"description": {
-		"message": "Imposta la qualità video predefinita per YouTube™, in grado di supportare la risoluzione ad alta definizione"
+		"message": "Imposta la qualità video predefinita per YouTube™"
 	},
 
 	"popupHeader": {
