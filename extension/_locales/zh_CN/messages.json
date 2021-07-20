@@ -1,10 +1,10 @@
 {
 	"name": {
-		"message": "为YouTube视频自动播放LD模式"
+		"message": "YouTube Auto LD"
 	},
 
 	"short_name": {
-		"message": "Auto LD for YouTube"
+		"message": "YouTube Auto LD"
 	},
 
 	"description": {
