@@ -7,7 +7,7 @@ class Main {
 	constructor() {
 		this.lastUrl = null;
 
-		YTAutoHD.setDebug(debug);
+		YTAutoLD.setDebug(debug);
 		this.init();
 	}
 
@@ -18,16 +18,16 @@ class Main {
 		let quality = this.getDefaultQuality(settings);
 
 		Utils.appendScriptToDOM([
-			YTAutoHD.toString(),
-			`var ytAutoHD = new YTAutoHD('${quality}');`,
-			`ytAutoHD.init();`
+			YTAutoLD.toString(),
+			`var ytAutoLD = new YTAutoLD('${quality}');`,
+			`ytAutoLD.init();`
 		]);
 
 		this.setListeners();
 	}
 
 	getDefaultQuality(settings = {}) {
-		return settings.quality ? settings.quality : ytAutoHD.DEFAULT_QUALITY;
+		return settings.quality ? settings.quality : ytAutoLD.DEFAULT_QUALITY;
 	}
 
 	setListeners() {
@@ -54,13 +54,13 @@ class Main {
 
 	triggerUpdatePlayerQualityScript() {
 		Utils.appendScriptToDOM([
-			`try { ytAutoHD.updatePlayerQuality(); } catch(ex) { ythderror(ex); }`
+			`try { ytAutoLD.updatePlayerQuality(); } catch(ex) { ytlderror(ex); }`
 		]);
 	}
 
 	triggerSetQualityScript(quality) {
 		Utils.appendScriptToDOM([
-			`try { ytAutoHD.setQuality('${quality}'); } catch(ex) { ythderror(ex); }`
+			`try { ytAutoLD.setQuality('${quality}'); } catch(ex) { ytlderror(ex); }`
 		]);
 	}
 

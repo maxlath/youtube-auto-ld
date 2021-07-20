@@ -20,7 +20,7 @@
             "lib/browser-polyfill.min.js",
             "utils.js",
             "content/embedded-frame-js-flag.js",
-            "content/yt-auto-hd.js",
+            "content/yt-auto-ld.js",
             "content.js"
         ],
         "matches": [

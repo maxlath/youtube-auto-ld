@@ -1,4 +1,4 @@
-class YTAutoHD {
+class YTAutoLD {
 	constructor(quality = null) {
 		this.quality = quality;
 		this.player = null;
@@ -9,12 +9,12 @@ class YTAutoHD {
 
 	async init() {
 		try {
-			ythdlog("init!!");
+			ytldlog("init!!");
 			this.player = await this.findPlayer();
 			this.updatePlayerQuality();
 			this.setMutationObserver();
 		} catch(ex) {
-			ythderror(ex);
+			ytlderror(ex);
 		}
 	}
 
@@ -51,23 +51,23 @@ class YTAutoHD {
 
 	updatePlayerQuality() {
 		try {
-			// ythdlog("updatePlayerQuality");
-			// ythdlog(this.quality);
-			// ythdlog(this.Player.getAvailableQualityLevels());
+			// ytldlog("updatePlayerQuality");
+			// ytldlog(this.quality);
+			// ytldlog(this.Player.getAvailableQualityLevels());
 			let isQualityAvaliable = this.player.getAvailableQualityLevels().includes(this.quality);
 			let chosenQuality = isQualityAvaliable ? this.quality : this.getAlternativeQuality();
 
 			if (chosenQuality === null) {
-				throw new Error("YTAutoHD.updatePlayerQuality: 'chosenQuality' is null");
+				throw new Error("YTAutoLD.updatePlayerQuality: 'chosenQuality' is null");
 			}
-			// ythdlog(isQualityAvaliable);
-			// ythdlog(chosenQuality);
+			// ytldlog(isQualityAvaliable);
+			// ytldlog(chosenQuality);
 			this.player.setPlaybackQuality(chosenQuality);
 			if (this.player.setPlaybackQualityRange) {
 				this.player.setPlaybackQualityRange(chosenQuality);
 			}
 		} catch(ex) {
-			ythderror(ex);
+			ytlderror(ex);
 		}
 	}
 
@@ -75,9 +75,9 @@ class YTAutoHD {
 		return new Promise((resolve, reject) => {
 			if (!this.isHostYouTube()) { reject(); }
 			let interval = setInterval(() => {
-				ythdlog("trying to find player2");
+				ytldlog("trying to find player2");
 				if (this.isPlayerExists()) {
-					ythdlog("found it!!!");
+					ytldlog("found it!!!");
 					clearInterval(interval);
 					resolve(this.getPlayerElement());
 				}
@@ -88,7 +88,7 @@ class YTAutoHD {
 	isPlayerExists() {
 		let player = document.getElementById('movie_player')
 			|| document.querySelector('.html5-video-player');
-		ythdlog(player);
+		ytldlog(player);
 
 		return player && player.getAvailableQualityLevels().length !== 0;
 	}
@@ -108,7 +108,7 @@ class YTAutoHD {
 						if (this.currentUrl !== window.location.href) {
 							this.updateCurrentURL();
 							this.updatePlayerQuality();
-							// ythdlog("player changed");
+							// ytldlog("player changed");
 						}
 					}
 					break;
@@ -122,16 +122,16 @@ class YTAutoHD {
 	static setDebug(debug) {
 		if (debug) {
 			Utils.appendScriptToDOM([
-				"var ythdlog = console.log;",
-				"var ythderror = console.error;"
+				"var ytldlog = console.log;",
+				"var ytlderror = console.error;"
 			]);
 		} else {
 			Utils.appendScriptToDOM([
-				"var ythdlog = () => {};",
-				"var ythderror = () => {};"
+				"var ytldlog = () => {};",
+				"var ytlderror = () => {};"
 			]);
 		}
 	}
 }
 
-YTAutoHD.DEFAULT_QUALITY = "medium";
+YTAutoLD.DEFAULT_QUALITY = "medium";
