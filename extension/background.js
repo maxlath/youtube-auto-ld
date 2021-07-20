@@ -5,15 +5,15 @@ if (!debug) { log = () => {}; error = () => {}; }
 
 log("bg");
 
-const DEFAULT_QUALITY_ICON = 9; // auto
+const DEFAULT_QUALITY_ICON = 6; // medium
 
 browser.storage.sync.get().then(data => {
     let itemNum = data.qualityItemNum || null;
 
     if (!itemNum) {
         itemNum = DEFAULT_QUALITY_ICON;
-        let qualityItemNum = 4;
-        let quality = "hd720";
+        let qualityItemNum = 6;
+        let quality = "medium";
         browser.storage.sync.set({ qualityItemNum, quality });
     }
 

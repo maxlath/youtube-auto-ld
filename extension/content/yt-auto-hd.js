@@ -134,4 +134,4 @@ class YTAutoHD {
 	}
 }
 
-YTAutoHD.DEFAULT_QUALITY = "hd720";
+YTAutoHD.DEFAULT_QUALITY = "medium";

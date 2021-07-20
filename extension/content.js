@@ -6,7 +6,7 @@ if (!debug) { log = () => {}; error = () => {}; }
 class Main {
 	constructor() {
 		this.lastUrl = null;
-		
+
 		YTAutoHD.setDebug(debug);
 		this.init();
 	}
@@ -33,7 +33,7 @@ class Main {
 	setListeners() {
 		browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
 			log(request.message);
-			
+
 			if (request.message === "quality-updated") {
 				this.triggerSetQualityScript(request.quality);
 				this.triggerUpdatePlayerQualityScript();

@@ -15,7 +15,7 @@ body {
 	color: #ffffff;
 	width: 257px;
 	box-shadow: 0 4px 6px 0 rgba(0,0,0,0.16);
-	height: 466px;
+	height: 278px;
 	overflow: hidden;
 }
 
@@ -77,8 +77,8 @@ body {
 .item-extra-info {
 	color: #f85658;
 	line-height: 38px;
-	margin-left: 6px;	
-	margin-bottom: 6px;	
+	margin-left: 6px;
+	margin-bottom: 6px;
 	font-size: 12px;
 }
 
@@ -141,7 +141,7 @@ body {
 .item-emoji-wrapper {
 	position: relative;
 }
-
+/*
 ._4320p .item-emoji {
 	background-image: url("../images/emoji/4320p.svg");
 }
@@ -180,4 +180,4 @@ body {
 
 ._auto .item-emoji {
 	background-image: url("../images/emoji/auto.svg");
-}
+} */

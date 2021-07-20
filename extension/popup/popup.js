@@ -3,6 +3,9 @@ var log = console.log;
 var error = console.error;
 if (!debug) { log = () => {}; error = () => {}; }
 
+// highres, hd2160, hd1440, hd1080, hd720
+const removedItems = 5
+
 function onQualityChanged(qualityItemNum, quality) {
     browser.storage.sync.set({ qualityItemNum, quality });
 
@@ -19,7 +22,7 @@ function onQualityChanged(qualityItemNum, quality) {
 };
 
 var Scroller = (function() {
-    const DEFAULT_QUALITY_ITEM = 4;     // hd720
+    const DEFAULT_QUALITY_ITEM = 6;     // medium
     const ITEM_HEIGHT = 38;
     const NUM_OF_ITEMS = 5;
     const SPEED_ANCHOR = ITEM_HEIGHT * NUM_OF_ITEMS; // speed anchor
@@ -45,7 +48,7 @@ var Scroller = (function() {
 
                 if (!itemNum) {    // instead of a click
                     itemNum = DEFAULT_QUALITY_ITEM;
-                    onQualityChanged(DEFAULT_QUALITY_ITEM, "hd720");
+                    onQualityChanged(DEFAULT_QUALITY_ITEM, "medium");
                 }
 
                 this.browserAction.setIcon(itemNum);
@@ -93,6 +96,7 @@ var Scroller = (function() {
         }
 
         setPositionByItemNum(itemNum) {
+            itemNum = itemNum - removedItems
             let newPosition = itemNum * ITEM_HEIGHT;
             if (!this.hasPositionChanged(newPosition)) { return; }
 
