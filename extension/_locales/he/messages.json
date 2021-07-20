@@ -1,10 +1,10 @@
 {
 	"name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"short_name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"description": {
@@ -12,7 +12,7 @@
 	},
 
 	"popupHeader": {
-		"message": "הגדר את ברירת המחדל של רזולוצית הווידאו ב- YouTube™",
+		"message": "הגדר את ברירת המחדל של רזולוצית הווידאו ב- YouTube",
 		"description": "Popup header"
 	},
 

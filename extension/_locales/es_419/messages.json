@@ -1,18 +1,18 @@
 {
 	"name": {
-		"message": "Auto LD para YouTube™"
+		"message": "Auto LD para YouTube"
 	},
 
 	"short_name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"description": {
-		"message": "Establece la calidad de vídeo predeterminada para YouTube™"
+		"message": "Establece la calidad de vídeo predeterminada para YouTube"
 	},
 
 	"popupHeader": {
-		"message": "Establece la calidad predeterminada para YouTube™",
+		"message": "Establece la calidad predeterminada para YouTube",
 		"description": "Popup header"
 	},
 

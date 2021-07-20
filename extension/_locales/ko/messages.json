@@ -1,18 +1,18 @@
 {
 	"name": {
-		"message": "YouTube™ 비디오 용 HD / 4k / 8k 모드로 자동 재생"
+		"message": "YouTube 비디오 용 HD / 4k / 8k 모드로 자동 재생"
 	},
 
 	"short_name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"description": {
-		"message": "고해상도를 지원할 수 있도록 YouTube™"
+		"message": "고해상도를 지원할 수 있도록 YouTube"
 	},
 
 	"popupHeader": {
-		"message": "YouTube™을 위한 초기 품질",
+		"message": "YouTube을 위한 초기 품질",
 		"description": "Popup header"
 	},
 

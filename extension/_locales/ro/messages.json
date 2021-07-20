@@ -1,18 +1,18 @@
 {
 	"name": {
-		"message": "Auto LD pentru YouTube™"
+		"message": "Auto LD pentru YouTube"
 	},
 
 	"short_name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"description": {
-		"message": "Setați calitatea video implicită pentru YouTube™"
+		"message": "Setați calitatea video implicită pentru YouTube"
 	},
 
 	"popupHeader": {
-		"message": "Setați calitatea implicită pentru YouTube™",
+		"message": "Setați calitatea implicită pentru YouTube",
 		"description": "Popup header"
 	},
 

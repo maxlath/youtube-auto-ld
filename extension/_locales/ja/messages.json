@@ -1,18 +1,18 @@
 {
 	"name": {
-		"message": "YouTube™動画のHD / 4k / 8kモードで自動的に再生します"
+		"message": "YouTube動画のHD / 4k / 8kモードで自動的に再生します"
 	},
 
 	"short_name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"description": {
-		"message": "高解像度の解像度をサポートする既定のYouTube™"
+		"message": "高解像度の解像度をサポートする既定のYouTube"
 	},
 
 	"popupHeader": {
-		"message": "YouTube™の既定の画質を設定。",
+		"message": "YouTubeの既定の画質を設定。",
 		"description": "Popup header"
 	},
 

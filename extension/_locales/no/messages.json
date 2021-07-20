@@ -1,18 +1,18 @@
 {
 	"name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"short_name": {
-		"message": "Auto LD for YouTube™"
+		"message": "Auto LD for YouTube"
 	},
 
 	"description": {
-		"message": "Bestem standardkvaliteten for YouTube™"
+		"message": "Bestem standardkvaliteten for YouTube"
 	},
 
 	"popupHeader": {
-		"message": "Bestem standardkvaliteten for YouTube™",
+		"message": "Bestem standardkvaliteten for YouTube",
 		"description": "Popup header"
 	},
 
