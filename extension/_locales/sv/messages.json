@@ -1,0 +1,23 @@
+{
+	"name": {
+		"message": "Auto HD/4k/8k för YouTube™"
+	},
+
+	"short_name": {
+		"message": "Auto HD/4k/8k for YouTube™"
+	},
+
+	"description": {
+		"message": "Ställ in din YouTube™-standardvideokvalitet, som stöder HD-upplösning"
+	},
+
+	"popupHeader": {
+		"message": "Ställ in standardkvaliteten för YouTube™",
+		"description": "Popup header"
+	},
+
+	"popupAutoText": {
+		"message": "Automatisk",
+		"description": "Auto"
+	}
+}

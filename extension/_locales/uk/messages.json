@@ -1,0 +1,23 @@
+{
+	"name": {
+		"message": "Авто HD/4k/8k для YouTube™"
+	},
+
+	"short_name": {
+		"message": "Auto HD/4k/8k for YouTube™"
+	},
+
+	"description": {
+		"message": "Встановіть свою якість за замовчуванням для YouTube™, підтримується роздільна здатність високої чіткості"
+	},
+
+	"popupHeader": {
+		"message": "Встановіть якість за замовчуванням для YouTube™",
+		"description": "Popup header"
+	},
+
+	"popupAutoText": {
+		"message": "Автоматично",
+		"description": "Auto"
+	}
+}

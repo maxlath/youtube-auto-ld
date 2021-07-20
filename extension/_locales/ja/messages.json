@@ -1,0 +1,23 @@
+{
+	"name": {
+		"message": "YouTube™動画のHD / 4k / 8kモードで自動的に再生します"
+	},
+
+	"short_name": {
+		"message": "Auto HD/4k/8k for YouTube™"
+	},
+
+	"description": {
+		"message": "高解像度の解像度をサポートする既定のYouTube™ビデオ画質を設定してください。"
+	},
+
+	"popupHeader": {
+		"message": "YouTube™の既定の画質を設定。",
+		"description": "Popup header"
+	},
+
+	"popupAutoText": {
+		"message": "自動",
+		"description": "Auto"
+	}
+}

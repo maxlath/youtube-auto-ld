@@ -1,0 +1,23 @@
+{
+	"name": {
+		"message": "Speel automatisch in HD / 4k / 8k-modus voor YouTube™ -video's"
+	},
+
+	"short_name": {
+		"message": "Auto HD/4k/8k for YouTube™"
+	},
+
+	"description": {
+		"message": "Stel uw standaard YouTube™-videokwaliteit in, ondersteuning voor High Definition-resolutie"
+	},
+
+	"popupHeader": {
+		"message": "Stel de standaardkwaliteit in voor YouTube™",
+		"description": "Popup header"
+	},
+
+	"popupAutoText": {
+		"message": "automatisch",
+		"description": "Auto"
+	}
+}

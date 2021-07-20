@@ -1,0 +1,23 @@
+{
+	"name": {
+		"message": "Auto HD / 4k / 8k para YouTube™"
+	},
+
+	"short_name": {
+		"message": "Auto HD / 4k / 8k for YouTube™"
+	},
+
+	"description": {
+		"message": "Establece la calidad de vídeo predeterminada para YouTube™, compatible con la resolución de alta definición"
+	},
+
+	"popupHeader": {
+		"message": "Establece la calidad predeterminada para YouTube™",
+		"description": "Popup header"
+	},
+
+	"popupAutoText": {
+		"message": "Automático",
+		"description": "Auto"
+	}
+}
