@@ -1,72 +1,72 @@
-var debug = false;
-var log = console.log;
-var error = console.error;
-if (!debug) { log = () => {}; error = () => {}; }
+const debug = false
+let log = console.log
+let error = console.error
+if (!debug) { log = () => {}; error = () => {} }
 
 class Main {
-	constructor() {
-		this.lastUrl = null;
+  constructor () {
+    this.lastUrl = null
 
-		YTAutoLD.setDebug(debug);
-		this.init();
-	}
+    YTAutoLD.setDebug(debug)
+    this.init()
+  }
 
-	async init() {
-		if (!Utils.isHostYouTube()) { return; }
+  async init () {
+    if (!Utils.isHostYouTube()) { return }
 
-		let settings = await this.getSettings();
-		let quality = this.getDefaultQuality(settings);
+    const settings = await this.getSettings()
+    const quality = this.getDefaultQuality(settings)
 
-		Utils.appendScriptToDOM([
-			YTAutoLD.toString(),
-			`var ytAutoLD = new YTAutoLD('${quality}');`,
-			`ytAutoLD.init();`
-		]);
+    Utils.appendScriptToDOM([
+      YTAutoLD.toString(),
+      `var ytAutoLD = new YTAutoLD('${quality}');`,
+      'ytAutoLD.init();'
+    ])
 
-		this.setListeners();
-	}
+    this.setListeners()
+  }
 
-	getDefaultQuality(settings = {}) {
-		return settings.quality ? settings.quality : ytAutoLD.DEFAULT_QUALITY;
-	}
+  getDefaultQuality (settings = {}) {
+    return settings.quality ? settings.quality : ytAutoLD.DEFAULT_QUALITY
+  }
 
-	setListeners() {
-		browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-			log(request.message);
+  setListeners () {
+    browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
+      log(request.message)
 
-			if (request.message === "quality-updated") {
-				this.triggerSetQualityScript(request.quality);
-				this.triggerUpdatePlayerQualityScript();
-			}
+      if (request.message === 'quality-updated') {
+        this.triggerSetQualityScript(request.quality)
+        this.triggerUpdatePlayerQualityScript()
+      }
 
-			if (request.message === "youtube-tab-updated") {
-				if (this.lastUrl !== request.url) {
-					setTimeout(()=>{
-						this.triggerUpdatePlayerQualityScript();
-					}, 1000);
+      if (request.message === 'youtube-tab-updated') {
+        if (this.lastUrl !== request.url) {
+          setTimeout(() => {
+            this.triggerUpdatePlayerQualityScript()
+          }, 1000)
 
-					this.lastUrl = request.url;
-					log("url updated");
-				}
-			}
-		});
-	}
+          this.lastUrl = request.url
+          log('url updated')
+        }
+      }
+    })
+  }
 
-	triggerUpdatePlayerQualityScript() {
-		Utils.appendScriptToDOM([
-			`try { ytAutoLD.updatePlayerQuality(); } catch(ex) { ytlderror(ex); }`
-		]);
-	}
+  triggerUpdatePlayerQualityScript () {
+    Utils.appendScriptToDOM([
+      'try { ytAutoLD.updatePlayerQuality(); } catch(ex) { ytlderror(ex); }'
+    ])
+  }
 
-	triggerSetQualityScript(quality) {
-		Utils.appendScriptToDOM([
-			`try { ytAutoLD.setQuality('${quality}'); } catch(ex) { ytlderror(ex); }`
-		]);
-	}
+  triggerSetQualityScript (quality) {
+    Utils.appendScriptToDOM([
+      `try { ytAutoLD.setQuality('${quality}'); } catch(ex) { ytlderror(ex); }`
+    ])
+  }
 
-	async getSettings() {
-		return browser.storage.sync.get();
-	}
+  async getSettings () {
+    return browser.storage.sync.get()
+  }
 }
 
-var main = new Main();
+const main = new Main()

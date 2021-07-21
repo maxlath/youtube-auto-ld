@@ -1,84 +1,84 @@
-var LocaleBinder = (function() {
-	const DATA_ATTRIBUTE_LOCALE = "data-locale";
-	const DATA_ATTRIBUTE_LOCALE_INNER_HTML = "data-locale-inner";
+const LocaleBinder = (function () {
+  const DATA_ATTRIBUTE_LOCALE = 'data-locale'
+  const DATA_ATTRIBUTE_LOCALE_INNER_HTML = 'data-locale-inner'
 
-	class LocaleBinder {
-		constructor() {
-			this.bind();
-		}
+  class LocaleBinder {
+    constructor () {
+      this.bind()
+    }
 
-		getAllElementsWithDataAttribute() {
-			return document.querySelectorAll("[" + DATA_ATTRIBUTE_LOCALE + "]");
-		}
+    getAllElementsWithDataAttribute () {
+      return document.querySelectorAll('[' + DATA_ATTRIBUTE_LOCALE + ']')
+    }
 
-		bind() {
-			try {
-				let elements = this.getAllElementsWithDataAttribute();
+    bind () {
+      try {
+        const elements = this.getAllElementsWithDataAttribute()
 
-				for (let i = 0; i < elements.length; i++) {
-					let element = elements[i];
+        for (let i = 0; i < elements.length; i++) {
+          const element = elements[i]
 
-					if (this.hasLocaleForInnerHtml(element)) {
-						this.setLocaleForInnerHtml(element);
-					}
+          if (this.hasLocaleForInnerHtml(element)) {
+            this.setLocaleForInnerHtml(element)
+          }
 
-					this.setLocalesForAttributes(element);
-				}
-			} catch(ex) {
-				error(ex);
-			}
-		}
+          this.setLocalesForAttributes(element)
+        }
+      } catch (ex) {
+        error(ex)
+      }
+    }
 
-		getLocaleValueForInnerHtml(element) {
-			if (element.hasAttribute(DATA_ATTRIBUTE_LOCALE_INNER_HTML)) {
-				let localeValue = element.getAttribute(DATA_ATTRIBUTE_LOCALE_INNER_HTML);
-				localeValue = localeValue.trim();
+    getLocaleValueForInnerHtml (element) {
+      if (element.hasAttribute(DATA_ATTRIBUTE_LOCALE_INNER_HTML)) {
+        let localeValue = element.getAttribute(DATA_ATTRIBUTE_LOCALE_INNER_HTML)
+        localeValue = localeValue.trim()
 
-				if (!localeValue) {
-					return null;
-				}
+        if (!localeValue) {
+          return null
+        }
 
-				return browser.i18n.getMessage(localeValue);
-			}
+        return browser.i18n.getMessage(localeValue)
+      }
 
-			return null;
-		}
+      return null
+    }
 
-		hasLocaleForInnerHtml(element) {
-			return element.hasAttribute(DATA_ATTRIBUTE_LOCALE_INNER_HTML);
-		}
+    hasLocaleForInnerHtml (element) {
+      return element.hasAttribute(DATA_ATTRIBUTE_LOCALE_INNER_HTML)
+    }
 
-		setLocaleForInnerHtml(element) {
-			let innerHtmlLocaleValue = this.getLocaleValueForInnerHtml(element);
-			if (innerHtmlLocaleValue) {
-				this.setTextNode(element, innerHtmlLocaleValue);
-			}
-		}
+    setLocaleForInnerHtml (element) {
+      const innerHtmlLocaleValue = this.getLocaleValueForInnerHtml(element)
+      if (innerHtmlLocaleValue) {
+        this.setTextNode(element, innerHtmlLocaleValue)
+      }
+    }
 
-		setTextNode(element, text) {
-			for (let node of element.childNodes) {
-				if (node.nodeType === 3) {
-					node.nodeValue = text;
+    setTextNode (element, text) {
+      for (const node of element.childNodes) {
+        if (node.nodeType === 3) {
+          node.nodeValue = text
 
-					return;
-				}
-			}
-		}
+          return
+        }
+      }
+    }
 
-		setLocalesForAttributes(element) {
-			for (let localeKey in element.dataset) {
-				let localeValue = element.dataset[localeKey];
-				let targetAttributeName = this.extractTargetAttributeName(localeKey);
-				if (targetAttributeName && element.hasAttribute(targetAttributeName)) {
-					element.setAttribute(targetAttributeName, browser.i18n.getMessage(localeValue));
-				}
-			}
-		}
+    setLocalesForAttributes (element) {
+      for (const localeKey in element.dataset) {
+        const localeValue = element.dataset[localeKey]
+        const targetAttributeName = this.extractTargetAttributeName(localeKey)
+        if (targetAttributeName && element.hasAttribute(targetAttributeName)) {
+          element.setAttribute(targetAttributeName, browser.i18n.getMessage(localeValue))
+        }
+      }
+    }
 
-		extractTargetAttributeName(localeKey) {
-			return localeKey.split("locale")[1].toLowerCase();
-		}
-	}
+    extractTargetAttributeName (localeKey) {
+      return localeKey.split('locale')[1].toLowerCase()
+    }
+  }
 
-	return LocaleBinder;
-})();
+  return LocaleBinder
+})()
