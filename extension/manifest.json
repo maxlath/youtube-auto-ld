@@ -1,7 +1,7 @@
 {
     "name": "__MSG_name__",
     "short_name": "__MSG_short_name__",
-    "version": "1.0.5",
+    "version": "1.0.8",
     "description": "__MSG_description__",
     "permissions": ["tabs", "<all_urls>", "storage"],
     "background": {
@@ -45,7 +45,7 @@
     "applications": {
         "gecko": {
             "strict_min_version": "79.0",
-            "id": "{8393693c-6473-499a-b0d2-076d66b0afea}"
+            "id": "{13f79d48-7f85-48a7-a4f0-2f5261c8fc56}"
         }
     },
     "manifest_version": 2
