@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "Ustaw domyślną jakość odtwarzania wideo w serwisie YouTube"
-	},
-
 	"popupHeader": {
 		"message": "Ustaw domyślną jakość w serwisie YouTube",
 		"description": "Popup header"

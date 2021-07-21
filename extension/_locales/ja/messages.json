@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "高解像度の解像度をサポートする既定のYouTube"
-	},
-
 	"popupHeader": {
 		"message": "YouTubeの既定の画質を設定。",
 		"description": "Popup header"

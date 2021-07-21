@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "Setați calitatea video implicită pentru YouTube"
-	},
-
 	"popupHeader": {
 		"message": "Setați calitatea implicită pentru YouTube",
 		"description": "Popup header"

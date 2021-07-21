@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "הגדר את ברירת המחדל של רזולוצית הווידאו ב- YouTube ™"
-	},
-
 	"popupHeader": {
 		"message": "הגדר את ברירת המחדל של רזולוצית הווידאו ב- YouTube",
 		"description": "Popup header"

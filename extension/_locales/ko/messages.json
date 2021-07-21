@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "고해상도를 지원할 수 있도록 YouTube"
-	},
-
 	"popupHeader": {
 		"message": "YouTube을 위한 초기 품질",
 		"description": "Popup header"

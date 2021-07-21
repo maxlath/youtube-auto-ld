@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "设置您的默认YouTube视频质量"
-	},
-
 	"popupHeader": {
 		"message": "为YouTube设置默认质量",
 		"description": "Popup header"

@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "YouTube عندك، مع دعم الدقة عالية الوضوح."
-	},
-
 	"popupHeader": {
 		"message": "تعيين الجودة الافتراضية لـ YouTube",
 		"description": "Popup header"

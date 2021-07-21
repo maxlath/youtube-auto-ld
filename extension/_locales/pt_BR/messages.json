@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "Configure a qualidade padrão de seu vídeo em YouTube"
-	},
-
 	"popupHeader": {
 		"message": "Configure a qualidade padrão para YouTube",
 		"description": "Popup header"

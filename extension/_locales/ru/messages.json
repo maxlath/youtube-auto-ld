@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "Установите качество видео YouTube по умолчанию с поддержкой разрешения высокой четкости."
-	},
-
 	"popupHeader": {
 		"message": "Установите качество по умолчанию для YouTube",
 		"description": "Popup header"

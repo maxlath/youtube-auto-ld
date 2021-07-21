@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "Задайте качеството на видеото по подразбиране за YouTube"
-	},
-
 	"popupHeader": {
 		"message": "Задайте качеството по подразбиране за YouTube",
 		"description": "Popup header"

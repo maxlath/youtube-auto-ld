@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "Bestem standardkvaliteten for YouTube"
-	},
-
 	"popupHeader": {
 		"message": "Bestem standardkvaliteten for YouTube",
 		"description": "Popup header"

@@ -7,10 +7,6 @@
 		"message": "YouTube Auto LD"
 	},
 
-	"description": {
-		"message": "Állítsd be az alapértelmezett YouTube-videominőséget"
-	},
-
 	"popupHeader": {
 		"message": "Állítsd be az alapértelmezett minőséget a YouTube számára",
 		"description": "Popup header"
