@@ -10,16 +10,13 @@ body {
 	padding: 0px;
 	border: none;
 	background-color: #222222;
-	font-family: "RobotoMedium";
-	font-size: 13px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	color: #ffffff;
 	width: 257px;
 	box-shadow: 0 4px 6px 0 rgba(0,0,0,0.16);
 	height: 240px;
 	overflow: hidden;
 }
-
-.wrapper { }
 
 .title {
 	display: flex;
@@ -53,12 +50,10 @@ body {
 	top: 0px;
 	transform: translate3d(0,0,0);
 	transition: transform 0.4s ease-out;
-	/*transition-delay: 0.1s;*/
 }
 
 .item {
 	cursor: pointer;
-	font-size: 14px;
 	height: 38px;
 	display: flex;
 	justify-content: space-evenly;
@@ -118,66 +113,3 @@ body {
 	position: absolute;
 	opacity: 0;
 }
-
-.item-emoji {
-	position: absolute;
-	background-size: 21px 21px;
-	background-repeat: no-repeat;
-	width: 21px;
-	height: 21px;
-	transform: perspective(50px) translate3d(0,0,-11px);
-	transition: transform 0.2s ease;
-}
-/*
-.item-emoji-base {
-	z-index: 10;
-	position: absolute;
-	background-size: 17.2px 17.2px;
-	background-repeat: no-repeat;
-	width: 17.2px;
-	height: 17.2px;
-}
-*/
-.item-emoji-wrapper {
-	position: relative;
-}
-/*
-._4320p .item-emoji {
-	background-image: url("../images/emoji/4320p.svg");
-}
-
-._2160p .item-emoji {
-	background-image: url("../images/emoji/2160p.svg");
-}
-
-._1440p .item-emoji {
-	background-image: url("../images/emoji/1440p.svg");
-}
-
-._1080p .item-emoji {
-	background-image: url("../images/emoji/1080p.svg");
-}
-
-._720p .item-emoji {
-	background-image: url("../images/emoji/720p.svg");
-}
-
-._480p .item-emoji {
-	background-image: url("../images/emoji/480p.svg");
-}
-
-._360p .item-emoji {
-	background-image: url("../images/emoji/360p.svg");
-}
-
-._240p .item-emoji {
-	background-image: url("../images/emoji/240p.svg");
-}
-
-._144p .item-emoji {
-	background-image: url("../images/emoji/144p.svg");
-}
-
-._auto .item-emoji {
-	background-image: url("../images/emoji/auto.svg");
-} */
