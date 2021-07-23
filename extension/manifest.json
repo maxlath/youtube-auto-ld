@@ -1,9 +1,9 @@
 {
     "name": "__MSG_name__",
     "short_name": "__MSG_short_name__",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "description": "__MSG_description__",
-    "permissions": ["tabs", "<all_urls>", "storage"],
+    "permissions": ["storage"],
     "background": {
         "scripts": [
             "lib/browser-polyfill.min.js",
