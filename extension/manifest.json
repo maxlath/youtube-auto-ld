@@ -13,6 +13,7 @@
         ]
     },
     "default_locale": "en",
+    "homepage_url": "https://github.com/maxlath/youtube-auto-ld",
     "content_scripts": [{
         "all_frames": true,
         "css": [],
