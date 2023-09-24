@@ -46,7 +46,20 @@ browser.tabs.onUpdated.addListener((tabId, changeInfo, tabInfo) => {
   }
 })
 
-const isYoutubeUrl = url => url != null && new URL(url).host.includes('youtube.com')
+const youtubeHosts = new Set([
+  'www.youtube.com',
+  'www.youtube-nocookie.com',
+  'www.youtubeeducation.com',
+])
+
+const isYoutubeUrl = url => {
+  if (url != null) {
+    const { host } = new URL(url)
+    return youtubeHosts.has(host)
+  } else {
+    return false
+  }
+}
 
 const areSameVideo = (previousUrl, newUrl) => getSearchWithoutT(previousUrl) === getSearchWithoutT(newUrl)
 
