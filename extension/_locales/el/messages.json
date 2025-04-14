@@ -7,6 +7,10 @@
 		"message": "YouTube Auto LD"
 	},
 
+	"description": {
+		"message": "Ορίστε την προεπιλεγμένη σας ποιότητα βίντεο για το YouTube"
+	},
+
 	"popupHeader": {
 		"message": "Ορίστε την προεπιλεγμένη ποιότητα για το YouTube",
 		"description": "Popup header"
