@@ -15,5 +15,9 @@
   "license": "ISC",
   "webExt": {
     "sourceDir": "extension"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://codeberg.org/maxlath/youtube-auto-ld"
   }
 }
